@@ -1,0 +1,326 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 11px;
+  width: 100%;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-color: #ffffff;
+  color: #707070;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20vh 6vh max-content 20vh;
+}
+
+.navBar {
+  grid-row: 2/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #087ab1;
+  width: 100%;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.navBar ul li {
+  margin: 0 0.5em;
+}
+.navBar ul li a {
+  text-decoration: none;
+  color: white;
+}
+.navBar ul li a:hover {
+  color: #084663;
+}
+
+.header {
+  grid-row: 1/2;
+  font-family: "Kaushan Script", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #087ab1;
+}
+h1 {
+  font-size: 4.5em;
+}
+
+.main {
+  grid-row: 3/4;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0px 10px 10px 10px;
+  justify-content: center;
+}
+.post {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  margin-top: 6em;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12rem;
+  background-color: #087ab1;
+  color: #ffffff;
+}
+.copyright {
+  font-size: 1.5rem;
+}
+.sideBar {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+}
+.newsLetter {
+  width: 100%;
+  height: 30rem;
+  padding: 2.5rem;
+  border: 2px solid #d7d7d7;
+  margin: 2.9rem 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  transition: all 0.5s ease-out;
+}
+.newsLetter:hover {
+  transition: 0.5s ease-in;
+  border: 2px solid #087ab1;
+}
+.submit {
+  height: 5rem;
+  background-color: #087ab1;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.email {
+  height: 4rem;
+  padding-left: 1rem;
+}
+
+.advertiser {
+  width: 100%;
+  height: 32rem;
+  padding: 2.5rem;
+  border: 2px solid #d7d7d7;
+  margin: 2.9rem 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  transition: all 0.5s ease-out;
+}
+.advertiser:hover {
+  transition: 0.5s ease-in;
+  border: 2px solid #087ab1;
+}
+.adsPic {
+  background-image: url(img/ins4.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 17rem;
+  height: 17rem;
+  align-self: center;
+}
+.category {
+  width: 100%;
+  height: 35rem;
+  padding: 2.5rem;
+  border: 2px solid #d7d7d7;
+  margin: 2.9rem 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  transition: all 0.5s ease-out;
+}
+.category:hover {
+  transition: 0.5s ease-in;
+  border: 2px solid #087ab1;
+}
+.btn {
+  height: 4rem;
+  background-color: #d7d7d759;
+  color: black;
+  border: none;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+.btn:hover {
+  transition: 0.2s ease-in;
+  background-color: #087ab1;
+  color: white;
+}
+#margin {
+  margin-top: 1rem;
+}
+
+.authorInfo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 4em;
+  padding: 0px 2em;
+}
+.authorPic {
+  background-image: url(img/author3.jpg);
+  background-size: cover;
+  background-position: top;
+  height: 20em;
+  border-radius: 50%;
+  width: 20em;
+  align-self: center;
+}
+h3 {
+  font-size: 1.3em;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  align-self: center;
+  margin-top: 3rem;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.bio {
+  align-self: flex-end;
+  font-size: 1.2em;
+  line-height: 2em;
+  margin-top: 1.5rem;
+}
+.socialLinks {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+.social {
+  width: 3em;
+  padding: 4px;
+}
+
+.postPic {
+  /* This page is designed using mobile first approach
+  so omitting the width property as suggested will cause the page to overflow in x direction
+  you are free to try this using Device Mode in Chrome DevTools.*/
+  width: 100%;
+}
+.postTitle {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  align-self: center;
+  margin-top: 2rem;
+  font-size: 2.1em;
+  letter-spacing: 6px;
+  font-weight: 600;
+}
+.postText {
+  font-size: 1.2em;
+  line-height: 2em;
+  margin-top: 2.5rem;
+}
+.img2 {
+  background-image: url(img/15.jpg);
+  background-size: cover;
+  background-position: top;
+  height: 25em;
+  margin-top: 1em;
+}
+form {
+  display: contents;
+}
+/* tablet styles */
+@media only screen and (min-width: 430px) {
+  html {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 6.7em;
+  }
+  .navBar ul li {
+    font-size: 1.2em;
+  }
+  .newsLetter {
+    width: 70%;
+    align-self: center;
+  }
+  .advertiser {
+    width: 70%;
+    align-self: center;
+  }
+  .category {
+    width: 70%;
+    align-self: center;
+  }
+  .postPic {
+    width: 100%;
+  }
+  figure {
+    align-self: center;
+  }
+  .img2 {
+    width: 70%;
+    align-self: center;
+  }
+}
+/* large screen styles */
+@media only screen and (min-width: 960px) {
+  h1 {
+    font-size: 8em;
+  }
+  .navBar ul li {
+    font-size: 1.5em;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    grid-template-rows: max-content max-content;
+  }
+  .sideBar {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-top: 3.7em;
+  }
+  .authorInfo {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 70%;
+    justify-self: center;
+  }
+  .post {
+    width: 70%;
+    justify-self: center;
+  }
+  .postPic {
+    height: 80em;
+    width: 100%;
+    background-position: center;
+  }
+}

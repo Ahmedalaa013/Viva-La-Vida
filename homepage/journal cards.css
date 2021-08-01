@@ -1,0 +1,133 @@
+.Journal {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.travelCard {
+  display: grid;
+  grid-template-columns: 250px;
+  grid-template-rows: 350px 70px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #a88262;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.travelCard:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.travel-cardImg {
+  grid-row: 1/2;
+  background-image: url(img/travel.jpg);
+  background-size: cover;
+  border-radius: 15px;
+}
+.travel-cardFooter {
+  grid-row: 2/3;
+  color: #ffffff;
+  align-self: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+}
+
+.lifeStyleCard {
+  display: grid;
+  grid-template-columns: 250px;
+  grid-template-rows: 350px 70px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #293636;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.lifeStyleCard:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.lifeStyle-cardImg {
+  grid-row: 1/2;
+  background-image: url(img/lifestyle.jpg);
+  background-size: cover;
+  border-radius: 15px;
+}
+.lifeStyle-cardFooter {
+  grid-row: 2/3;
+  color: #ffffff;
+  align-self: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+}
+
+.foodCard {
+  display: grid;
+  grid-template-columns: 250px;
+  grid-template-rows: 350px 70px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #e2b34e;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.foodCard:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.Food-cardImg {
+  grid-row: 1/2;
+  background-image: url(img/food.jpg);
+  background-size: cover;
+  border-radius: 15px;
+}
+.Food-cardFooter {
+  grid-row: 2/3;
+  color: #ffffff;
+  align-self: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+}
+
+.fashionCard {
+  display: grid;
+  grid-template-columns: 250px;
+  grid-template-rows: 350px 70px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #888888;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.fashionCard:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.Fashion-cardImg {
+  grid-row: 1/2;
+  background-image: url(img/Fashion.jpg);
+  background-size: cover;
+  border-radius: 15px;
+}
+.Fashion-cardFooter {
+  grid-row: 2/3;
+  color: #ffffff;
+  align-self: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+}

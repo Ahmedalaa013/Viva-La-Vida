@@ -1,0 +1,106 @@
+.posts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card {
+  display: grid;
+  grid-template-columns: 400px;
+  grid-template-rows: 230px 70px 80px 50px;
+  text-align: center;
+  background-color: white;
+  padding: 15px 0px;
+}
+.cardImg {
+  grid-row: 1/2;
+  background-image: url(img/1.1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  font-family: "Lobster", cursive;
+  align-self: center;
+  color: black;
+  font-size: 2.5em;
+  letter-spacing: 4px;
+  transition: all 1s ease-out;
+}
+
+.title:hover {
+  transition: 1s ease;
+  color: #087ab1;
+}
+
+.content {
+  transition: all 1s ease-out;
+}
+.content:hover {
+  transition: 1s ease;
+  color: #087ab1;
+}
+.cardFooter {
+  align-self: center;
+}
+button {
+  background-color: white;
+}
+.btn {
+  color: rgb(233, 21, 21);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+  line-height: 50px;
+  padding: 7px 28px;
+  border-color: #d7d7d7;
+  border-width: 2px;
+  border-style: solid;
+  transition: all 0.75s ease-out;
+}
+
+.btn:hover {
+  transition: 0.75s ease;
+  background-color: #087ab1;
+  color: white;
+}
+#p2 {
+  background-image: url(img/2.jpg);
+  background-position: bottom;
+}
+#p3 {
+  background-image: url(img/11.jpg);
+  background-position: bottom;
+}
+#p4 {
+  background-image: url(img/4.jpg);
+}
+#p5 {
+  background-image: url(img/5.jpg);
+}
+#p6 {
+  background-image: url(img/6.jpg);
+}
+#p7 {
+  background-image: url(img/7.jpg);
+}
+#p8 {
+  background-image: url(img/8.jpg);
+  background-position: top;
+}
+#p9 {
+  background-image: url(img/9.jpg);
+  background-position: top;
+}
+#p10 {
+  background-image: url(img/10.jpg);
+}
+#p11 {
+  background-image: url(img/3.jpg);
+  background-position: center;
+}
+#p12 {
+  background-image: url(img/12.jpg);
+  background-position: top;
+}

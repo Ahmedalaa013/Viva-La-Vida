@@ -1,0 +1,164 @@
+@import url("journal\ cards.css");
+@import url("post-cards.css");
+@import url("footer.css");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-color: #ffffff;
+  font-size: 16px;
+  color: #707070;
+  height: 100vh;
+  padding: 0px 10px 10px 10px;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 3.4vw 14vw 60vw min-content 25vw;
+  grid-template-columns: auto;
+}
+
+.header {
+  font-family: "Kaushan Script", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vw;
+  color: #087ab1;
+  grid-row: 2/3;
+}
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-row: 1/2;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #087ab1;
+  border-radius: 4px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.navBar ul li {
+  margin: 0 1rem;
+}
+.navBar ul li a {
+  text-decoration: none;
+  color: white;
+}
+.navBar ul li a:hover {
+  color: #084663;
+}
+.slogan {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(8, 122, 177, 0.7),
+      rgba(2, 63, 74, 0.8)
+    ),
+    url(img/slogan.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+}
+.logo {
+  width: 9vw;
+}
+.headingPrimary {
+  color: white;
+  align-self: center;
+}
+.primaryMain {
+  font-size: 14vw;
+  font-weight: 400;
+  letter-spacing: 2.2vw;
+}
+.primarySub {
+  font-size: 1.75vw;
+  font-weight: 700;
+  letter-spacing: 2.2vw;
+  padding-left: 1.4vw;
+}
+.main {
+  display: grid;
+  grid-template-rows: 0.8fr 2fr;
+}
+
+/* tablet and mobile styles */
+
+@media only screen and (max-width: 730px) {
+  .container {
+    grid-template-columns: 100%;
+    grid-template-rows: 6vh 20vh 65vh min-content 40vh;
+
+    font-size: 11px;
+  }
+  .header {
+    font-size: 3vh;
+  }
+  .primaryMain {
+    font-size: 25vw;
+  }
+  .primarySub {
+    font-size: 4.8vw;
+  }
+  .navBar ul li {
+    margin: 0 0.5rem;
+  }
+  .card {
+    grid-template-columns: 300px;
+  }
+  .Journal {
+    flex-direction: column;
+  }
+  .social {
+    margin-top: 30px;
+  }
+  .privateInfo {
+    max-width: 30px;
+  }
+}
+
+/* when certain phones rotate */
+
+@media (min-aspect-ratio: 8/5) and (max-width: 600px) {
+  .primaryMain {
+    font-size: 10vw;
+    letter-spacing: 4.9vw;
+  }
+  .primarySub {
+    font-size: 2vw;
+  }
+  .social {
+    max-width: 20px;
+  }
+  .privateInfo {
+    max-width: 20px;
+  }
+  .travelCard {
+    grid-template-rows: 230px 50px;
+  }
+  .lifeStyleCard {
+    grid-template-rows: 230px 50px;
+  }
+  .foodCard {
+    grid-template-rows: 230px 50px;
+  }
+  .fashionCard {
+    grid-template-rows: 230px 50px;
+  }
+}
