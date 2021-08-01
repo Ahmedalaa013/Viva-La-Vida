@@ -4,12 +4,12 @@ This Blog is a Fully Responsive Website which have Articles About Lifestyle, Foo
 
 ## Technologies
 
-HTML5
+HTML5, 
 CSS3
 
 ## Live Version
 
-[Viva La Vida]()
+[Viva La Vida](https://ahmedalaa013.github.io/Viva-La-Vida)
 
 ## Resources
 
